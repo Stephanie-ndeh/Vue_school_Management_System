@@ -1,36 +1,35 @@
 <template>
-  <div id="app">
-    <NavMenu />
-    <ChatBtn />
-
-    <div class="auth-wrapper">
-      <div class="auth-inner">
-        <router-view />
-        
+    <form class="contain">
+      <h2>SIGN IN</h2>
+      <div class="logo1"><img src="../assets/logo1.png" alt="logo" /></div> 
+      <div class="input-field">
+        <input type="text" required />
+        <label>Enter your Matricule Number</label>
       </div>
-      
-    </div>
-    
-  </div>
+      <div class="input-field">
+        <input type="Password" required />
+        <label>Enter your password</label>
+      </div>
+      <div class="forget">
+        <label for="remember">
+          <input type="checkbox" id="remember"/>
+          <p>Remember me</p>
+        </label>
+        <a href="#">Forgot password?</a>
+      </div>
+      <button type="submit">Log In</button>
+      <div class="register">
+        <p>Don't have a student's account? <a href="#">Register</a></p>
+      </div>
+    </form>
 </template>
 
 <script>
-import NavMenu from "./components/NavMenu";
-import ChatBtn from "./components/ChatBtn.vue";
-//import StudentRegister from "./components/StudentRegister.vue";
-//import Container_Box from "./components/Container_Box";
-export default {
-  name: "App",
-  components: {
-    NavMenu,
-    ChatBtn,
-    //StudentRegister,
-    //Container_Box,
-  },
-};
+    export default {
+    name: "UserLogin",
+    };
 </script>
-
-<style>
+<style scope>
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@200;300;400;500;600;700&display=swap");
 * {
   margin: 0;
@@ -54,7 +53,7 @@ body {
   min-height: 100vh;
   width: 100%;
   padding: 0 10px;
-  background-image: url("./assets/pexels-kobe-1516440.jpg");
+  background-image: url("../assets/pexels-kobe-1516440.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

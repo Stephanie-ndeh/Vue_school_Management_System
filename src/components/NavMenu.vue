@@ -10,10 +10,10 @@
         </button>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"><span class="glyphicon glyphicon-info-sign"></span>  About </a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-log-in"> </span> Admissions</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-earphone"></span> Contact</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-user"></span> User Login</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-info-sign"></span>&nbsp;&nbsp;  About </a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"> </span>&nbsp;&nbsp; Admissions</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-earphone"></span>&nbsp;&nbsp; Contact</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp; User Login</a></li>
             </ul>
         </div>
     </div>
