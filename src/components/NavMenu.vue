@@ -28,3 +28,6 @@
         name: 'NavMenu'
     }
 </script>
+<style scope>
+
+</style>

@@ -36,3 +36,22 @@
         name: 'HomeMenu'
     }
 </script>
+<style>
+.bgimage {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  padding: 0 10px;
+  background-image: url("../assets/pexels-kobe-1516440.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}</style>

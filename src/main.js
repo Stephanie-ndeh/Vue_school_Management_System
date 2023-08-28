@@ -1,8 +1,8 @@
 import { createApp } from 'vue';
 import { createRouter , createWebHistory} from 'vue-router';
 import App from './App.vue';
-import HomeMenu from './components/HomeMenu.vue'
-import Container_Box from './components/Container_Box.vue'
+import HomeMenu from '@/components/HomeMenu.vue'
+
 
 const router = new createRouter({
     history: createWebHistory(),
@@ -10,10 +10,7 @@ const router = new createRouter({
         path: '/Home', 
         Component: HomeMenu,
     },
-    {
-        path:'/container',
-        Component: Container_Box
-    }]
+]
 });
 const app = createApp(App);
 app.use(router)

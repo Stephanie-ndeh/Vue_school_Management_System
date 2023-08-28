@@ -5,8 +5,9 @@
 
     <div class="auth-wrapper">
       <div class="auth-inner">
-        <router-view />
-        
+        <StudentLogin />
+        <!-- <router-view /> -->
+        <!-- <Payment_Merchant/> -->
       </div>
       
     </div>
@@ -17,15 +18,20 @@
 <script>
 import NavMenu from "./components/NavMenu";
 import ChatBtn from "./components/ChatBtn.vue";
-//import StudentRegister from "./components/StudentRegister.vue";
-//import Container_Box from "./components/Container_Box";
+import StudentLogin from "./components/User/StudentLogin.vue";
+// import HomeMenu from "./components/HomeMenu.vue";
+// import Payment_Merchant from "./components/Payment/Payment_Merchant";
+// import Container_Box from "./components/Containxer_Bo";
 export default {
   name: "App",
   components: {
     NavMenu,
     ChatBtn,
-    //StudentRegister,
-    //Container_Box,
+    StudentLogin
+    // Payment_Merchant
+    // HomeMenu
+    // Container_Box,
+  
   },
 };
 </script>
@@ -37,27 +43,6 @@ export default {
   padding: 0;
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
-}
-.navbar{
-  padding: 10px;
-}
-.bgimage {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  width: 100%;
-  padding: 0 10px;
-  background-image: url("./assets/pexels-kobe-1516440.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 .logo1 {
   top: 0;
@@ -77,13 +62,14 @@ body {
   backdrop-filter: blur(9px);
   margin-top: 50px;
 }
+
 form {
   display: flex;
   flex-direction: column;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 20px;
   color: #252424 ;
   font-weight: bold;
@@ -112,6 +98,42 @@ h2 {
   outline: none;
   font-size: 16px;
   color: #fff;
+}
+.navbar{
+  padding: 10px;
+}
+.navbar-default {
+  margin-bottom: 0 !important;
+}
+.input-field {
+  position: relative;
+  border-bottom: 2px solid #ccc;
+  margin: 15px 0;
+}
+.input-field label {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 16px;
+  pointer-events: none;
+  transition: 0.15s ease;
+}
+.input-field input {
+  width: 100%;
+  height: 40px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #fff;
+}
+.input-field input:focus ~ label,
+.input-field input:valid ~ label {
+  font-size: 0.8rem;
+  top: 10px;
+  transform: translateY(-120%);
 }
 .input-field input:focus ~ label,
 .input-field input:valid ~ label {
