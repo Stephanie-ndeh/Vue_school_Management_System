@@ -5,33 +5,23 @@
 
     <div class="auth-wrapper">
       <div class="auth-inner">
-        <StudentLogin />
-        <!-- <router-view /> -->
-        <!-- <Payment_Merchant/> -->
+        <Visa_Payment />
       </div>
-      
     </div>
-    
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import NavMenu from "./components/NavMenu";
-import ChatBtn from "./components/ChatBtn.vue";
-import StudentLogin from "./components/User/StudentLogin.vue";
-// import HomeMenu from "./components/HomeMenu.vue";
-// import Payment_Merchant from "./components/Payment/Payment_Merchant";
-// import Container_Box from "./components/Containxer_Bo";
+import NavMenu from "./components/Home/NavMenu.vue";
+import ChatBtn from "./components/Home/ChatBtn.vue";
+
 export default {
   name: "App",
   components: {
     NavMenu,
     ChatBtn,
-    StudentLogin
-    // Payment_Merchant
-    // HomeMenu
-    // Container_Box,
-  
+
   },
 };
 </script>
@@ -52,11 +42,12 @@ export default {
   margin-bottom: 0 !important;
 }
 .contain {
+  margin-top: 40px;
   position: absolute;
   width: 400px;
   border-radius: 8px;
   transform: translate(-50%, -50%);
-  padding: 30px ;
+  padding: 30px;
   text-align: center;
   border: 1px solid rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(9px);
@@ -71,7 +62,7 @@ form {
 h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
-  color: #252424 ;
+  color: #252424;
   font-weight: bold;
 }
 
@@ -99,7 +90,7 @@ h2 {
   font-size: 16px;
   color: #fff;
 }
-.navbar{
+.navbar {
   padding: 10px;
 }
 .navbar-default {
@@ -187,11 +178,10 @@ a:hover {
   margin-top: 30px;
   color: #fff;
 }
-img {
+ img {
   height: 80px;
   width: 80px;
   border-radius: 10px;
   
 }
-
 </style>

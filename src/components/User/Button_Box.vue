@@ -8,14 +8,6 @@ export default {
     props:{
       text: String
     },
-    // methods: {
-    //   onclick() {
-    //     console.log('click')
-    //  @click="onClick()"  }
-    // }
 }
 </script>
 
-<style>
-
-</style>

@@ -10,10 +10,10 @@
         </button>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"><span class="glyphicon glyphicon-info-sign"></span>&nbsp;&nbsp;  About </a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-log-in"> </span>&nbsp;&nbsp; Admissions</a></li>
+                <li><router-link to="/about"><span class="glyphicon glyphicon-info-sign"></span>&nbsp;&nbsp;About  </router-link></li>
+                <li><router-link to="/home"><span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp; Home </router-link></li>
                 <li><a href="#"><span class="glyphicon glyphicon-earphone"></span>&nbsp;&nbsp; Contact</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp; User Login</a></li>
+                <li><router-link to="/login"><span class="glyphicon glyphicon-info-sign"></span>&nbsp;&nbsp; User Login </router-link></li>
             </ul>
         </div>
     </div>
@@ -28,6 +28,3 @@
         name: 'NavMenu'
     }
 </script>
-<style scope>
-
-</style>
