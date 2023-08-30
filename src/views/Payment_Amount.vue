@@ -3,22 +3,26 @@
     <form action="#">
       <Title_Payment text="Select Amount to be Paid" />
       <div class="category">
-        <Container_Method text="1st Installement">
-          <p>265000frs</p></Container_Method>
-        <Container_Method text="2nd Installemt">
+        <router-link to="method"><Container_Method text="1st Installement">
+          <p>265000frs</p> </Container_Method>
+        </router-link>
+          <router-link to="method">  <Container_Method text="2nd Installemt">
           <p>10000frs</p></Container_Method>
-        <Container_Method text="3rd Installement">
+        </router-link>
+          <router-link to="method">  <Container_Method text="3rd Installement">
           <p>45000frs</p></Container_Method>
-        <Container_Method text="Complete Fees">
+        </router-link>
+          <router-link to="method">  <Container_Method text="Complete Fees">
           <p>410000frs</p></Container_Method>
+        </router-link>
       </div>
     </form>
   </div>
 </template>
 
 <script>
-import Title_Payment from "./Title_Payment.vue";
-import Container_Method from "./Container_Method.vue";
+import Title_Payment from "../components/Payment/card/Title_Payment";
+import Container_Method from "../components/Payment/Container_Method.vue";
 export default {
   name: "Payment_Amount",
   props: {
@@ -32,12 +36,7 @@ export default {
 </script>
 
 <style scoped>
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-}
+
 .container {
   margin-top: 30px;
   margin-bottom: 30px;

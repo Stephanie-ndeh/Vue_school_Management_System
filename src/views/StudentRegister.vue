@@ -33,11 +33,11 @@ export default {
 </script>
 
 <style >
-body {
+/* body {
   background-image: url(../assets/pexels-kobe-1516440.jpg);
-}
+} */
 .contain {
-  margin-top: 150px;
+  margin-top: 250px;
   margin-bottom: 200px;
 }
 img {

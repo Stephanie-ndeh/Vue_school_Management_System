@@ -5,7 +5,7 @@
 
     <div class="auth-wrapper">
       <div class="auth-inner">
-        <Visa_Payment />
+        <Payment_Amount />
       </div>
     </div>
     <router-view></router-view>
@@ -15,14 +15,14 @@
 <script>
 import NavMenu from "./components/Home/NavMenu.vue";
 import ChatBtn from "./components/Home/ChatBtn.vue";
-
+import Payment_Amount from "./views/Payment_Amount.vue";
 export default {
   name: "App",
   components: {
     NavMenu,
     ChatBtn,
-
-  },
+    Payment_Amount
+},
 };
 </script>
 
@@ -147,24 +147,7 @@ h2 {
   margin-left: 8px;
   font-weight: bold;
 }
-button {
-  background: #fff;
-  color: #000;
-  font-weight: 600;
-  border: none;
-  padding: 12px 20px;
-  cursor: pointer;
-  border-radius: 15px 15px 15px 15px;
-  font-size: 20px;
-  border: 2px solid transparent;
-  transition: 0.3s ease;
-}
-button:hover {
-  background: blue;
-  color: #fff;
-  border-color: #fff;
-  background: rgba(44, 41, 85, 0.15);
-}
+
 a {
   color: #0e0e18;
   text-decoration: none;
@@ -178,10 +161,10 @@ a:hover {
   margin-top: 30px;
   color: #fff;
 }
- img {
+ /* img {
   height: 80px;
   width: 80px;
   border-radius: 10px;
   
-}
+} */
 </style>
