@@ -5,7 +5,7 @@
 
     <div class="auth-wrapper">
       <div class="auth-inner">
-        <Visa_Payment />
+        <!-- <User_Login /> -->
       </div>
     </div>
     <router-view></router-view>
@@ -15,14 +15,14 @@
 <script>
 import NavMenu from "./components/Home/NavMenu.vue";
 import ChatBtn from "./components/Home/ChatBtn.vue";
-
+// import User_Login from "./views/User_Login.vue";
 export default {
   name: "App",
   components: {
     NavMenu,
     ChatBtn,
-
-  },
+    // User_Login
+},
 };
 </script>
 
@@ -42,7 +42,6 @@ export default {
   margin-bottom: 0 !important;
 }
 .contain {
-  margin-top: 40px;
   position: absolute;
   width: 400px;
   border-radius: 8px;
@@ -51,7 +50,7 @@ export default {
   text-align: center;
   border: 1px solid rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(9px);
-  margin-top: 50px;
+  background-color: #b4a2b6;
 }
 
 form {
@@ -90,12 +89,7 @@ h2 {
   font-size: 16px;
   color: #fff;
 }
-.navbar {
-  padding: 10px;
-}
-.navbar-default {
-  margin-bottom: 0 !important;
-}
+
 .input-field {
   position: relative;
   border-bottom: 2px solid #ccc;
@@ -147,24 +141,7 @@ h2 {
   margin-left: 8px;
   font-weight: bold;
 }
-button {
-  background: #fff;
-  color: #000;
-  font-weight: 600;
-  border: none;
-  padding: 12px 20px;
-  cursor: pointer;
-  border-radius: 15px 15px 15px 15px;
-  font-size: 20px;
-  border: 2px solid transparent;
-  transition: 0.3s ease;
-}
-button:hover {
-  background: blue;
-  color: #fff;
-  border-color: #fff;
-  background: rgba(44, 41, 85, 0.15);
-}
+
 a {
   color: #0e0e18;
   text-decoration: none;
@@ -178,10 +155,5 @@ a:hover {
   margin-top: 30px;
   color: #fff;
 }
- img {
-  height: 80px;
-  width: 80px;
-  border-radius: 10px;
-  
-}
+
 </style>

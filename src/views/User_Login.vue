@@ -33,9 +33,8 @@ export default {
 </script>
   
 <style scoped>
-img {
-  height: 80px;
-  width: 80px;
-  border-radius: 10px;
+.contain {
+  margin-top: 80px;
+  margin-bottom: 400px;
 }
 </style>
