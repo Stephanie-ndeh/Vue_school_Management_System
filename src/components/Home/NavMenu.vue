@@ -12,7 +12,7 @@
             <ul class="nav navbar-nav navbar-right">
                 <li><router-link to="/about"><span class="glyphicon glyphicon-info-sign"></span>&nbsp;&nbsp;About  </router-link></li>
                 <li><router-link to="/home"><span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp; Home </router-link></li>
-                <li><a href="#"><span class="glyphicon glyphicon-earphone"></span>&nbsp;&nbsp; Contact</a></li>
+                <li><router-link to="/contact"><span class="glyphicon glyphicon-earphone"></span>&nbsp;&nbsp; Contact</router-link> </li>
                 <li><router-link to="/login"><span class="glyphicon glyphicon-info-sign"></span>&nbsp;&nbsp; User Login </router-link></li>
             </ul>
         </div>
@@ -28,3 +28,11 @@
         name: 'NavMenu'
     }
 </script>
+<style scoped>
+.navbar {
+  padding: 10px;
+}
+.navbar-default {
+  margin-bottom: 0 !important;
+}
+</style>

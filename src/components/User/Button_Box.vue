@@ -22,7 +22,7 @@ button {
   font-size: 20px;
   border: 2px solid transparent;
   transition: 0.3s ease;
-  width: 310px;
+  /* width: 370px; */
 }
 button:hover {
   background: blue;

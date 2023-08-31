@@ -1,6 +1,6 @@
 <template>
   <form class="contain">
-    <HeaderBox text="Student Login" />
+    <HeaderBox text="Student Register" />
     <Input_Container text="Enter Your Matricule Number" />
     <Input_Container text="Enter Date Of Birth" />
     <Input_Container text="Enter Email address" />
@@ -32,13 +32,13 @@ export default {
 };
 </script>
 
-<style >
+<style scoped>
 /* body {
   background-image: url(../assets/pexels-kobe-1516440.jpg);
 } */
 .contain {
-  margin-top: 250px;
-  margin-bottom: 200px;
+  margin-top: 180px;
+  margin-bottom: 100px;
 }
 img {
   height: 80px;
