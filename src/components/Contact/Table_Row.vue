@@ -13,7 +13,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 td :first-child {
   padding-right: 20px;
   

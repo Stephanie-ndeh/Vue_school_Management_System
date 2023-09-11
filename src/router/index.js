@@ -2,22 +2,24 @@
 import { createWebHistory,createRouter } from 'vue-router'
 import AboutUs from '../views/AboutUs'
 import HomeMenu from '../views/HomeMenu'
-import User_Login from '../views/User_Login'
+import UserLoginView from '../views/UserLoginView'
 import StudentRegister from '../views/StudentRegister'
-import VisaPayment_Method from '../views/VisaPayment_Method'
-import Mobile_payment from '../views/Mobile_payment'
-import Payment_Method from '../views/Payment_Method'
-import Contact_usPage from '../views/Contact_UsPage'
+import VisaPaymentMethod from '../views/VisaPaymentMethod'
+import MobilePayMent from '../views/MobilePayMent'
+import PaymentMethod from '../views/PaymentMethod'
+import ContactUsPage from '../views/ContactUsPage'
+import PaymentAmount from '@/views/PaymentAmount.vue'
 
 const routes = [
         {path: '/about',name: 'AboutUs', component: AboutUs},
-        {path: '/Visa',name: 'VisaPayment_Method', component: VisaPayment_Method},
-        {path: '/mobile',name: 'Mobile_payment', component: Mobile_payment},
-        {path: '/method', name: 'Payment_Method', component: Payment_Method},
-        {path: '/contact', name: 'Contact_UsPage', component: Contact_usPage},
+        {path: '/Visa',name: 'VisaPaymentMethod', component: VisaPaymentMethod},
+        {path: '/mobile',name: 'MobilePayMent', component: MobilePayMent},
+        {path: '/method', name: 'PaymentMethod', component: PaymentMethod},
+        {path: '/contact', name: 'ContactUsPage', component: ContactUsPage},
         {path: '/home',name: 'HomeMenu', component: HomeMenu},
-        {path: '/login',name: 'User_Login', component: User_Login},
-        {path: '/register',name: 'StudentRegister', component: StudentRegister}
+        {path: '/login',name: 'UserLoginView', component: UserLoginView},
+        {path: '/register',name: 'StudentRegister', component: StudentRegister},
+        {path: '/amount', name: 'PaymentAmount',component: PaymentAmount}
 ];
  const router = createRouter({
     history:createWebHistory(process.env.BASE_URL),

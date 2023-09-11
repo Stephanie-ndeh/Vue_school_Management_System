@@ -1,48 +1,41 @@
 <template>
-  <form class="contain">
-    <HeaderBox text="Student Register" />
-    <Input_Container text="Enter Your Matricule Number" />
-    <Input_Container text="Enter Date Of Birth" />
-    <Input_Container text="Enter Email address" />
-    <Input_Container text="Enter Phone Number" />
-    <Input_Container text="Enter Password" />
-    <Input_Container text="Confirm Password" />
-    <Button_Box text="Create Account" />
-    <Confirmation_Box text="Already have an account" />
-    <router-link to="login">Login Here</router-link>
-  </form>
+    <section class="bgImage">
+      <form class="contain">
+        <HeaderBox text="Student Register" />
+        <InputContainer text="Enter Your Matricule Number" />
+        <InputContainer text="Enter Date Of Birth" />
+        <InputContainer text="Enter Email address" />
+        <InputContainer text="Enter Phone Number" />
+        <InputContainer text="Enter Password" />
+        <InputContainer text="Confirm Password" />
+        <ButtonBox text="Create Account" />
+        <ConfirmationBox text="Already have an account" />
+        <router-link to="login">Login Here</router-link>
+      </form>
+     </section>
 </template>
 
 <script>
 import HeaderBox from "../components/User/HeaderBox.vue";
-import Input_Container from "../components/User/Input_Container.vue";
-import Button_Box from "../components/User/Button_Box.vue";
-import Confirmation_Box from "../components/User/Confirmation_Box.vue";
+import InputContainer from "../components/User/InputContainer.vue";
+import ButtonBox from "../components/User/ButtonBox.vue";
+import ConfirmationBox from "../components/User/ConfirmationBox.vue";
 export default {
-  name: "Container_Box",
+  name: "ContainerBox",
   props: {
     title: String,
   },
   components: {
     HeaderBox,
-    Input_Container,
-    Button_Box,
-    Confirmation_Box,
+    InputContainer,
+    ButtonBox,
+    ConfirmationBox,
   },
 };
 </script>
-
 <style scoped>
-/* body {
-  background-image: url(../assets/pexels-kobe-1516440.jpg);
-} */
-.contain {
-  margin-top: 180px;
-  margin-bottom: 100px;
-}
-img {
-  height: 80px;
-  width: 80px;
-  border-radius: 10px;
+.contain{
+  margin-top: 165px;
+  margin-bottom: 70px;
 }
 </style>

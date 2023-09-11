@@ -15,10 +15,10 @@
 
 <script>
 import Button_Box from "../components/User/Button_Box.vue";
-import FirstRow_Inputfield from "../components/Payment/card/FirstRow_Inputfield.vue";
-import SecondRow_Inputfield from "../components/Payment/card/SecondRow_Inputfield.vue";
-import ThirdRow_Inputfield from "../components/Payment/card/ThirdRow_Inputfield.vue";
-import Title_Payment from "@/components/Payment/card/Title_Payment.vue";
+import FirstRow_Inputfield from "../components/Payment/card/FirstRowInputfield.vue";
+import SecondRow_Inputfield from "../components/Payment/card/SecondRowInputfield.vue";
+import ThirdRow_Inputfield from "../components/Payment/card/ThirdRowInputfield.vue";
+import Title_Payment from "@/components/Payment/card/TitlePayment.vue";
 export default {
   name: "VisaPayment_Method",
   components: {
@@ -40,11 +40,15 @@ export default {
   width: 600px;
   height: 460px;
   border: 1px solid;
-  background-color: white;
+  background: linear-gradient(rgba(170, 170, 170, 0.7),rgba(25, 25, 26, 0.7));
   display: flex;
   flex-direction: column;
   padding: 40px;
   justify-content: space-around;
+  top: 30%;
+  left: 50%;
+  margin: 0 auto;
+  margin-top: 100px;
 }
 
 .containn h1 {

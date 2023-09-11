@@ -1,27 +1,21 @@
 <template>
   <div id="app">
     <NavMenu />
-    <ChatBtn />
-
-    <div class="auth-wrapper">
-      <div class="auth-inner">
-        <!-- <User_Login /> -->
       </div>
-    </div>
+
+
     <router-view></router-view>
-  </div>
+
 </template>
 
 <script>
-import NavMenu from "./components/Home/NavMenu.vue";
-import ChatBtn from "./components/Home/ChatBtn.vue";
-// import User_Login from "./views/User_Login.vue";
+import NavMenu from './components/Home/NavMenu.vue';
+
+
 export default {
   name: "App",
   components: {
-    NavMenu,
-    ChatBtn,
-    // User_Login
+    NavMenu
 },
 };
 </script>
@@ -32,7 +26,7 @@ export default {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 .logo1 {
   top: 0;
@@ -43,26 +37,29 @@ export default {
 }
 .contain {
   position: absolute;
+  top: 50%;
+  left: 50%;
   width: 400px;
   border-radius: 8px;
+  margin: 0 auto;
   transform: translate(-50%, -50%);
   padding: 30px;
   text-align: center;
   border: 1px solid rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(9px);
-  background-color: #b4a2b6;
+}
+.bgImage {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4, 7, 20, 0.7)), url(./assets/pexels-kobe-1516440.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
 }
 
 form {
   display: flex;
   flex-direction: column;
-}
-
-h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  color: #252424;
-  font-weight: bold;
 }
 
 .input-field {
@@ -141,19 +138,59 @@ h2 {
   margin-left: 8px;
   font-weight: bold;
 }
-
 a {
   color: #0e0e18;
   text-decoration: none;
   font-weight: bold;
 }
-a:hover {
-  color: #4d14d3;
-}
+
 .register {
   text-align: center;
   margin-top: 30px;
   color: #fff;
 }
-
+@media(max-width: 700px){ /*this media css is to adjust css to fit smaller screens*/
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .testimonial-col img{
+        margin-left: 0;
+        margin-right: 15px;
+    }
+    .cta h1{
+        font-size: 21px;
+    }
+}
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
 </style>

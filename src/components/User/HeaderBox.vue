@@ -12,9 +12,14 @@ export default {
 }
 </script>
 <style scoped>
+h2{
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: bold;
+}
 img {
-  height: 80px;
-  width: 80px;
-  border-radius: 10px;
+    height: 70px;
+    width: 80px;
+    border-radius: 10px;
 }
 </style>
