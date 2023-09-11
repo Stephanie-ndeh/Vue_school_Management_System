@@ -1,41 +1,42 @@
 <template>
-  <div class="heading">
-    <h1>About Us</h1>
-    <p>
-      Welcome to THIS School! We are a community of learners dedicated to
+  <section class="shift">
+    <div class="heading">
+      <h1>About Us</h1>
+      <p>
+      Welcome to [School Name]! We are a community of learners dedicated to
       providing a safe and nurturing environment where students can grow
       academically, socially, and emotionally. Our experienced faculty and staff
       are committed to helping each student reach their full potential by
       providing individualized attention and support. We believe that every
       student has unique talents and abilities that should be celebrated and
-      nurtured. At THIS School, we strive to create a culture of respect,
+      nurtured. At [School Name], we strive to create a culture of respect,
       kindness, and inclusivity where everyone feels valued and supported. Thank
-      you for considering THIS School for your child’s education.
-    </p>
-  </div>
-  <div class="container">
-    <section class="about">
-      <div class="about-image">
-        <img src="../assets/pexels-pixabay-256490.jpg" alt="" />
-      </div>
-      <div class="about-content">
-        <h2>school management system</h2>
-        <p>
-          Welcome to THIS School! We are a community of learners dedicated to
-          providing a safe and nurturing environment where students can grow
-          academically, socially, and emotionally. Our experienced faculty and
-          staff are committed to helping each student reach their full potential
-          by providing individualized attention and support. We believe that
-          every student has unique talents and abilities that should be
-          celebrated and nurtured. At THIS School, we strive to create a culture
-          of respect, kindness, and inclusivity where everyone feels valued and
-          supported. Thank you for considering THIS School for your child’s
-          education.
-        </p>
-        <a href="#" class="read-more">read More</a>
-      </div>
-    </section>
-  </div>
+      you for considering [School Name] for your child’s education.
+      </p>
+    </div>
+    <div class="container">
+      <section class="about">
+        <div class="about-image">
+          <img src="../assets/pexels-pixabay-256490.jpg" alt="" />
+        </div>
+        <div class="about-content">
+          <h2>school management system</h2>
+          <p>
+            At [School Name], we are committed to providing our students with
+            a quality education that prepares them for success in the 21st century.
+            Our experienced and dedicated faculty work tirelessly to create a safe 
+            and nurturing environment where students can learn and grow. We offer a 
+            wide range of programs and extracurricular activities that cater to the 
+            unique interests and talents of each student. Our state-of-the-art facilities are equipped 
+            with the latest technology to enhance the learning experience. We believe that every student
+            has the potential to achieve greatness, and we are here to help them realize their dreams. 
+            Join us at [School Name] and discover your full potential.
+          </p>
+          <a href="#" class="read-more">read More</a>
+        </div>
+      </section>
+    </div>
+  </section>
 </template>
   
   <script>
@@ -45,14 +46,8 @@ export default {
 </script>
   
   <style scoped>
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
-}
-body {
-  background-color: #f2f2f2;
+.shift{
+  margin-top: 70px;
 }
 .heading {
   width: 90%;
